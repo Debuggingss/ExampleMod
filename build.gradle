@@ -70,9 +70,11 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor("org.spongepowered:mixin:0.7.11-SNAPSHOT")
-    embed "gg.essential:loader-launchwrapper:1.1.0"
-    implementation "gg.essential:essential-1.8.9-forge:+"
+    compileOnly "gg.essential:essential-1.8.9-forge:1725"
+    embed "gg.essential:loader-launchwrapper:1.1.3"
+
+    implementation "org.spongepowered:mixin:0.7.11-SNAPSHOT"
+    annotationProcessor "org.spongepowered:mixin:0.7.11-SNAPSHOT"
 }
 
 jar {
@@ -97,3 +99,5 @@ reobf {
         mappingType = 'SEARGE'
     }
 }
+
+// _._ gradle-ext-ops: exec '(dependency resolve mode set legacy)
