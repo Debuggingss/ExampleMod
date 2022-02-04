@@ -5,10 +5,13 @@ import gg.essential.api.EssentialAPI
 import gg.essential.api.commands.Command
 import gg.essential.api.commands.DefaultHandler
 
-class ConfigCommand : Command("examplemod") {
+class ConfigCommand extends Command {
+    ConfigCommand() {
+        super("examplemod")
+    }
 
     @DefaultHandler
-    fun handle() {
+    void handle() {
         EssentialAPI.getGuiUtil().openScreen(ExampleMod.config?.gui())
     }
 }

@@ -17,3 +17,5 @@ out
 eclipse
 run
 build
+.gradle
+lib
