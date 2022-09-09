@@ -1,8 +1,7 @@
 {
     "compatibilityLevel": "JAVA_8",
     "package": "dev.debuggings.examplemod.mixins",
-    "refmap": "mixins.examplemod.refmap.json",
-    "mixins": [
+    "client": [
         "MixinMinecraft"
     ],
     "verbose": true
