@@ -7,7 +7,7 @@ import gg.essential.vigilance.data.PropertyType
 
 import java.io.File
 
-class Config : Vigilant(File(ExampleMod.configLocation)) {
+object Config : Vigilant(File(ExampleMod.configLocation)) {
 
     @Property(
         type = PropertyType.SWITCH,

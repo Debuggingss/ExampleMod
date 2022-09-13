@@ -9,8 +9,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 // You have to use Java for Mixins because it's very janky in Kotlin and you will have issues.
 @Mixin(Minecraft.class)
 public class MixinMinecraft {
-    @Inject(method = { "startGame" }, at = @At("RETURN"))
-    private void startGame(CallbackInfo ci) {
+
+    @Inject(method = "startGame", at = @At("TAIL"))
+    private void exampleMod$startGame(CallbackInfo ci) {
         System.out.println("Successfully injected into startGame.");
     }
 }
