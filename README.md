@@ -1,34 +1,22 @@
 # ExampleMod
 Template mod with Mixins and Essential.
 
-### Program arguments:
+### Set project SDK to Java 17+ 
 ```
---tweakClass
-gg.essential.loader.stage0.EssentialSetupTweaker
---mixin
-mixins.examplemod.json
-```
-
-### VM options:
-```
--Dmixin.debug.export=true
--Dmixin.debug.verbose=true
--javaagent:<path-to-mixin.jar>
+Keybinds in Intellij IDEA
+1, Ctrl + Shift + Alt + S
+2, Set SDK verision to Java 17 or above
+3, Apply
 ```
 
-### How to get Mixin JAR path:
-- Expand External Libraries
-  
-![External Libraries](https://i.debuggings.dev/0H38gESl.png)
+### Set run configuration to Java 8
+```
+Keybinds in Intellij IDEA
+1, Ctrl + Shift + A
+2, Type "Edit configurations"
+3, Open it
+4, Change Build and run to Java 8
+5, Apply
+```
 
-- Find `Gradle: org.spongepowered:mixin:<version>` and expand it
-
-![Mixin](https://i.debuggings.dev/nqEcOgwB.png)
-
-- Right click on `mixin-<version>.jar`, Click `Copy Path...`, Click `Absolute Path`
-
-![Copy Path](https://i.debuggings.dev/KXkK19u6.png)
-
-![Absolute Path](https://i.debuggings.dev/SZjoBtmj.png)
-
-- And finally, paste your clipboard contents to VM options replacing `<path-to-mixin.jar>`
+### GGs! You've set it up
