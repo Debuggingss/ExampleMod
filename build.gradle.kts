@@ -64,6 +64,14 @@ tasks {
         )
     }
 
+    processResources {
+        inputs.property("version", project.version)
+        inputs.property("mcversion", "1.8.9")
+        filesMatching("mcmod.info") {
+            expand("version" to project.version, "mcversion" to "1.8.9")
+        }
+    }
+
     withType<JavaCompile> {
         options.release.set(8)
     }
